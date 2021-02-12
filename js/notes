@@ -1,0 +1,12 @@
+3 objects- form, player, game object
+18:02
+Guest
+const Body = Matter.Body;
+18:13
+Guest
+- getState() will simply read the game state from the database.
+- update(state) will update the gameState in the database to a value passed to it inside the parentheses.
+-> databaseReference.on() creates a listener which keeps listening to the gameState from the database.
+Here the function is directly written inside the .on() listener.
+-> databaseReference.update() will update the database reference. Here "/" refers to the main database inside which gameState is created.
+start() function which will start the game and display on the screen depending on the state of the game.
